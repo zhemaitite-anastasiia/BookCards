@@ -16,9 +16,11 @@ class BookCard extends React.Component {
                 {this.props.stateProps.link}
                 </a>
                 <br/>
-                <i className="icon fa fa-pencil" aria-hidden="true"></i>
-                <i className="icon fa fa-trash" aria-hidden="true"></i>
-                <i className="icon fa fa-plus" aria-hidden="true"></i>
+                <i onClick={() => this.props.dispatchAction("PENCIL")} className="icon fa fa-pencil" aria-hidden="true"></i>
+        <i onClick={() => this.props.dispatchAction("TRASH")} className="icon fa fa-trash" aria-hidden="true"></i>
+        <i onClick={() => this.props.dispatchAction("PLUS")} className="icon fa fa-plus" aria-hidden="true"></i>
+
+
               </div>
             )
           }

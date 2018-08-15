@@ -16,6 +16,10 @@ class App extends React.Component {
     )
   }
 }
+//initialize store
+let store = createStore(BooksApp)
+console.log(store.getState());
+
 ReactDOM.render(
     <Provider store= { store }>
   <App />
